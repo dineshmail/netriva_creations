@@ -8691,6 +8691,8 @@ function initializeApplication(){
 
     App.initialized=true;
 
+    initializeLoader();
+
     checkRequiredElements();
 
     restoreApplicationData();
