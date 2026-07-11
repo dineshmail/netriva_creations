@@ -10225,3 +10225,54 @@ img.loaded{
     min-height:180px;
 
 }
+
+
+/*==================================================
+    MOBILE RESPONSIVE FIX
+==================================================*/
+
+@media (max-width: 768px){
+
+    .container,
+    .header-container,
+    .hero-container,
+    .footer-container,
+    .download-container,
+    .announcement-container{
+
+        width:95%;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        text-align:center;
+
+    }
+
+    .hero{
+
+        padding:60px 0;
+
+    }
+
+    .hero-left,
+    .hero-right{
+
+        width:100%;
+
+    }
+
+    img{
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
+}
