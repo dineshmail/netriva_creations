@@ -10066,3 +10066,37 @@ a{
 }
 
     }
+
+/*==================================================
+    LAZY IMAGES
+==================================================*/
+
+img[data-src]{
+
+    opacity:0;
+
+    filter:blur(12px);
+
+    transition:
+
+        opacity .5s ease,
+
+        filter .5s ease;
+
+}
+
+img.loaded{
+
+    opacity:1;
+
+    filter:blur(0);
+
+}
+
+.image-error{
+
+    background:#f5f5f5;
+
+    min-height:180px;
+
+}
