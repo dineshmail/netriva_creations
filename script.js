@@ -30,7 +30,7 @@ const App = {
 
 const DOM = {
 
-    loader: document.getElementById("loader"),
+    loader:document.getElementById("loader"),
 
     header: document.getElementById("header"),
 
