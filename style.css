@@ -10068,6 +10068,106 @@ a{
     }
 
 /*==================================================
+    TOAST CONTAINER
+==================================================*/
+
+.toast-container{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    z-index:999999;
+
+}
+
+.toast{
+
+    min-width:320px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:16px 20px;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    transform:translateX(120%);
+
+    transition:.35s ease;
+
+}
+
+.toast.show{
+
+    transform:translateX(0);
+
+}
+
+.toast-success{
+
+    border-left:5px solid #22c55e;
+
+}
+
+.toast-error{
+
+    border-left:5px solid #ef4444;
+
+}
+
+.toast-warning{
+
+    border-left:5px solid #f59e0b;
+
+}
+
+.toast-info{
+
+    border-left:5px solid #3b82f6;
+
+}
+
+.toast-icon{
+
+    font-size:22px;
+
+}
+
+.toast-content{
+
+    flex:1;
+
+}
+
+.toast-close{
+
+    cursor:pointer;
+
+    background:none;
+
+    border:none;
+
+    font-size:18px;
+
+}
+
+/*==================================================
     LAZY IMAGES
 ==================================================*/
 
