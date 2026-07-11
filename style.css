@@ -10226,53 +10226,48 @@ img.loaded{
 
 }
 
-
 /*==================================================
     MOBILE RESPONSIVE FIX
 ==================================================*/
 
-@media (max-width: 768px){
-
-    .container,
-    .header-container,
-    .hero-container,
-    .footer-container,
-    .download-container,
-    .announcement-container{
-
-        width:95%;
-
-    }
+@media (max-width:768px){
 
     .hero-container{
+        grid-template-columns:1fr;
+        gap:30px;
+        text-align:center;
+    }
+
+    .header-container{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .desktop-nav{
+        display:none;
+    }
+
+    .menu-btn{
+        display:flex;
+    }
+
+    .hero-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products-grid,
+    .featured-grid,
+    .trending-grid,
+    .categories-grid,
+    .arrival-grid,
+    .best-seller-grid,
+    .deals-grid,
+    .flash-products,
+    .why-grid,
+    .testimonial-grid,
+    .look-grid{
 
         grid-template-columns:1fr;
-
-        gap:40px;
-
-        text-align:center;
-
-    }
-
-    .hero{
-
-        padding:60px 0;
-
-    }
-
-    .hero-left,
-    .hero-right{
-
-        width:100%;
-
-    }
-
-    img{
-
-        max-width:100%;
-
-        height:auto;
-
     }
 
 }
