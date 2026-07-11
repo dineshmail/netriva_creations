@@ -376,23 +376,32 @@ function initializeLoader() {
 
     const startTime = Date.now();
 
-    window.addEventListener("load", () => {
+const finishLoader = () => {
 
-        const elapsed = Date.now() - startTime;
+    const elapsed = Date.now() - startTime;
 
-        const remaining = Math.max(
-            Loader.minimumTime - elapsed,
-            0
-        );
+    const remaining = Math.max(
+        Loader.minimumTime - elapsed,
+        0
+    );
 
-        setTimeout(() => {
+    setTimeout(() => {
 
-            hideLoader();
+        hideLoader();
 
-        }, remaining);
+    }, remaining);
 
-    });
+};
 
+if(document.readyState === "complete"){
+
+    finishLoader();
+
+}else{
+
+    window.addEventListener("load", finishLoader);
+
+}
 }
 
 /*==================================================
