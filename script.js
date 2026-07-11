@@ -304,15 +304,17 @@ const Loader = {
     SHOW LOADER
 ==================================================*/
 
-function showLoader() {
+function showLoader(){
 
-    if (!DOM.loader) return;
+    if(!DOM.loader) return;
+
+    DOM.loader.classList.remove("hide");
 
     DOM.loader.style.display = "flex";
 
-    DOM.loader.style.opacity = "1";
-
     document.body.style.overflow = "hidden";
+
+}
 
 }
 
@@ -320,21 +322,19 @@ function showLoader() {
     HIDE LOADER
 ==================================================*/
 
-function hideLoader() {
+function hideLoader(){
 
-    if (!DOM.loader) return;
+    if(!DOM.loader) return;
 
-    DOM.loader.style.opacity = "0";
+    DOM.loader.classList.add("hide");
 
-    DOM.loader.style.pointerEvents = "none";
-
-    setTimeout(() => {
+    setTimeout(()=>{
 
         DOM.loader.style.display = "none";
 
         document.body.style.overflow = "";
 
-    }, 500);
+    },500);
 
 }
 
