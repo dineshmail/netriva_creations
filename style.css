@@ -2708,6 +2708,21 @@ main{
 
     }
 
+/*======
+animate purpose in js =========*/
+
+
+[data-animate]{
+    opacity:0;
+    transform:translateY(40px);
+    transition:opacity .6s ease, transform .6s ease;
+}
+
+.animate{
+    opacity:1;
+    transform:translateY(0);
+}
+
 /*==================================================
     CATEGORIES
 ==================================================*/
