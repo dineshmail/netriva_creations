@@ -130,7 +130,11 @@ main{
 ==================================================*/
 
 :root{
-
+    /*===if no need remove===*/
+    --bg:#ffffff;
+    --text:#222222;
+    --card:#ffffff;
+}
     /* Primary */
 
     --primary:#7b2cbf;
@@ -194,7 +198,13 @@ main{
     --container:1400px;
 
 }
+/*=== if no need remove====*/
 
+[data-theme="dark"]{
+    --bg:#121212;
+    --text:#f5f5f5;
+    --card:#1f1f1f;
+}
 
 
 /*==================================================
