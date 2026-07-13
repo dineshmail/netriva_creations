@@ -380,6 +380,8 @@ main{
 
 .blog-card{
 
+    height: 100%;
+
     background:var(--card);
 
     border-radius:20px;
@@ -389,6 +391,14 @@ main{
     transition:var(--transition);
 
     box-shadow:var(--shadow-sm);
+
+    padding: 25px;
+
+    display:flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
 
 }
 
@@ -460,6 +470,8 @@ main{
     white-space:nowrap;
 
     user-select:none;
+
+    margin-top: 20px;
 
 }
 
@@ -1210,6 +1222,13 @@ main{
     gap:30px;
 
 }
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap: 40px;
 
 /*==================================================
     LOGO
@@ -2335,6 +2354,11 @@ main{
 ==================================================*/
 
 .hero{
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
 
     position:relative;
 
@@ -2377,11 +2401,11 @@ main{
 
     content:"";
 
-    position:absolute;
+    /*position:absolute;*/
 
     bottom:-180px;
 
-    left:-120px;
+    /*left:-120px;*/
 
     width:420px;
 
@@ -10286,4 +10310,4 @@ img.loaded{
     }
 }
 }
-}
+}}
